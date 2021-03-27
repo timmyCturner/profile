@@ -3,8 +3,8 @@
     "name":"Tim Kueny",
     "occupation":"Unemployed",
     "description":"Recent college graduate looking for employment",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "image":"linkedin.jpg",
+    "bio":"I am a recent graduate looking to begin my career. I feel like i can mix into any work enviorment, I just need a chance to show my worth and find my niche.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "kuenytc5@vt.edu",
     "phone": "203-516-1970",
@@ -15,7 +15,7 @@
       "zip": "24073"
     },
     "website": "",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"Resume_Kueny.pdf",
     "social":[
       {
         "name":"facebook",
@@ -47,30 +47,46 @@
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"CompuCon/Lowes",
+        "title":"IT Technician",
+        "years":"March 2021",
+        "description":"This short contracting job consisted of traveling to different Lowes locations in order to fix problems with registers, signature capture machines and other items through out all departments. This job required lots of hands-on learning with little preparation."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Sharkey’s Wing and Rib Joint",
+        "title":"Cook",
+        "years":"June 2019-March 2020",
+        "description":"Employed as a cook between school hours. Responsible for cooking a wide range of foods including burgers, wraps, wings, and ribs. Worked as member of a team for the timely execution of orders. Responsible for the open and close the restaurant under Board of Health guidelines. "
       }
     ],
     "skills":[
+      {
+        "name":"Python",
+        "level":"80%"
+      },
+      {
+        "name":"C",
+        "level":"75%"
+      },
+      {
+        "name":"Java",
+        "level":"70%"
+      },
+      {
+        "name":"JavaScript",
+        "level":"75%"
+      },
       {
         "name":"Git",
         "level":"60%"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"75%"
       },
       {
         "name":"CSS",
-        "level":"50%"
+        "level":"55%"
       },
       {
         "name":"HTML5",
@@ -91,8 +107,8 @@
       {
         "title":"Envirovision",
         "category":"Artistic look on how polution effects the enviorment",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "image":"EnvirovisionI.jpg",
+        "url":"https://samiea.github.io/Envirovision/"
       }
     ]
   },
