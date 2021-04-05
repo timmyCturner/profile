@@ -1,11 +1,11 @@
 {
   "main": {
     "name":"Tim Kueny",
-    "occupation":"Unemployed",
-    "description":"Recent college graduate looking for employment",
+    "occupation":"Future Software Developer",
+    "description":"I am a recent college graduate looking for employment in the field of computer science, specifically programing.",
     "image":"LinkedIn.jpg",
-    "bio":"I am a recent graduate looking to begin my career. I feel like I can mix into any work enviorment, I just need a chance to show my worth and find my niche.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"I recently graduated from Virginia Tech's School of Engineer with a degree in computer science.  Throughout my education, I focus on prgraming as a way to solve complex problems.  I work well as part of a team and will be an asset to any organization.",
+    "contactmessage":"Write me an email @kuenytc5@vt.edu. I am currently looking for jobs in the Knoxville area",
     "email": "kuenytc5@vt.edu",
     "phone": "203-516-1970",
     "address":{
@@ -39,10 +39,10 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"Virginia Tech",
-        "degree":"BS. in Computer Science",
+        "school":"Virginia Tech, School of Engineering",
+        "degree":"BS in Computer Science",
         "graduated":"January 2021",
-        "description":"As a Computer Science Major I learned how to work through complex projects."
+        "description":"As a Computer Science Major, I learned multiple languages essential to programming such as C, Java and Javascript, as well as hands on experience with a range of multiple other languages."
       }
     ],
     "work":[
@@ -62,43 +62,35 @@
     "skills":[
       {
         "name":"Python",
-        "level":"80%"
+        "level":"90%"
       },
       {
         "name":"C",
-        "level":"75%"
+        "level":"80%"
       },
       {
         "name":"Java",
-        "level":"70%"
+        "level":"80%"
       },
       {
         "name":"JavaScript",
-        "level":"75%"
+        "level":"85%"
       },
       {
         "name":"Git",
-        "level":"60%"
+        "level":"85%"
       },
       {
         "name":"ReactJs",
-        "level":"75%"
+        "level":"90%"
       },
       {
         "name":"CSS",
-        "level":"55%"
+        "level":"90%"
       },
       {
         "name":"HTML5",
-        "level":"60%"
-      },
-      {
-        "name":"VueJs",
-        "level":"50%"
-      },
-      {
-        "name":"MongoDB",
-        "level":"30%"
+        "level":"75%"
       }
     ]
   },
