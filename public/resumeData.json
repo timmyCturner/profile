@@ -47,6 +47,12 @@
     ],
     "work":[
       {
+        "company":"Anion Creative",
+        "title":"Junior Developer",
+        "years":"May 2021-Present",
+        "description":"Junior developer involved in all aspects of website development: graphic design, website design, and website development. At a client’s request, a comp would be developed personally but most often by a client or coworker. The websites’ were structured with Wordpress and Woocommerce for the backend framework, PHP and JQuery for the middle ground, and HTML CSS for the front end."
+      },
+      {
         "company":"CompuCon/Lowes",
         "title":"IT Technician",
         "years":"March 2021",
@@ -91,6 +97,31 @@
       {
         "name":"HTML5",
         "level":"75%"
+      }
+    ]
+  },
+  "anioncreative":{
+    "projects": [
+      {
+        "title":"Kindred Spirit Mailbox",
+        "category":"Vacation Rental Site",
+        "image":"KindredSpiritMailbox.png",
+        "url":"https://kindredspiritvacation.com/"
+
+      },
+      {
+        "title":"Vic Niceley Art Work",
+        "category":"Art Selling Website",
+        "image":"VicNiceley.png",
+        "url":"https://vicniceley.com/"
+
+      },
+      {
+        "title":"Moores Heating and Air",
+        "category":"Heating and Air Conditioning Promotion",
+        "image":"MooresHA.png",
+        "url":"https://mooresheatingandair.com/"
+
       }
     ]
   },
