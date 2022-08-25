@@ -137,7 +137,7 @@
     ]
   },
   "featured":{
-    "projects": [
+    "featured": [
       {
         "title":"Swarm",
         "category":"lighting and patterns with three.js",
