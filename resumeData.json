@@ -32,7 +32,6 @@
         "url":"https://github.com/timmyCturner/profile",
         "className":"fa fa-github"
       }
-
     ]
   },
   "resume":{
@@ -121,6 +120,36 @@
         "category":"Heating and Air Conditioning Promotion",
         "image":"MooresHA.PNG",
         "url":"https://mooresheatingandair.com/"
+
+      },
+      {
+        "title":"Peddlers Pawn",
+        "category":"Pawn Shop",
+        "image":"PP.PNG",
+        "url":"https://peddlerpawn.com/"
+      },
+      {
+        "title":"Warrington Eye Care",
+        "category":"Doctors Office",
+        "image":"WWEC.PNG",
+        "url":"https://warringtoneyecare.com/"
+      }
+    ]
+  },
+  "featured":{
+    "projects": [
+      {
+        "title":"Swarm",
+        "category":"lighting and patterns with three.js",
+        "image":"Swarm.png",
+        "url":"https://timmycturner.github.io/swarm"
+
+      },
+      {
+        "title":"Astro",
+        "category":"A game built with three.js",
+        "image":"astro.png",
+        "url":"https://timmycturner.github.io/astro"
 
       }
     ]
