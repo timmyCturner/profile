@@ -298,10 +298,12 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
   	background: #ccc;
   	height: 42px;
   	border-radius: 3px;
+    width: 48%;
+    display: inline-block;
+    margin: 0 2% 60px 0;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;

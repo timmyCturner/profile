@@ -141,14 +141,14 @@
       {
         "title":"Swarm",
         "category":"lighting and patterns with three.js",
-        "image":"Swarm.png",
+        "image":"Swarm.PNG",
         "url":"https://timmycturner.github.io/swarm"
 
       },
       {
         "title":"Astro",
         "category":"A game built with three.js",
-        "image":"astro.png",
+        "image":"astro.PNG",
         "url":"https://timmycturner.github.io/astro"
 
       }
