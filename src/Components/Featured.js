@@ -26,7 +26,7 @@ class Featured extends Component {
     }
 
     return (
-      <section id="portfolio">
+      <section id="featured">
 
       <div className="row">
 

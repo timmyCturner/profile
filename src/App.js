@@ -9,6 +9,7 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
+import Skills from './Components/Skills';
 import Featured from './Components/Featured';
 import AnionCreative from './Components/anioncreative';
 
@@ -55,6 +56,7 @@ class App extends Component {
         <Featured data={this.state.resumeData.featured}/>
         <AnionCreative data = {this.state.resumeData.anioncreative}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
+        <Skills data={this.state.resumeData.resume}/>
         <Contact data={this.state.resumeData.main}/>
         <Footer data={this.state.resumeData.main}/>
       </div>

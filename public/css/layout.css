@@ -235,34 +235,36 @@ ul#nav li.current a { color: #F06000; }
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#resume,#skills {
    background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 60px;
    overflow: hidden;
 }
 
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
-#resume h1 {
+#resume h1,
+#skills h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#resume h1 span,
+#skills h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
+#skills h3,
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 
 }
-
+#skills .header-col,
 #resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#resume .main-col, #skills .main-col { padding-right: 10%; }
 
-.education, .work {
+.education {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -270,7 +272,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
-   margin-bottom: 18px;
+   margin-bottom: 5px;
    margin-top: 9px;
 }
 #resume .info span {
@@ -280,6 +282,29 @@ ul#nav li.current a { color: #F06000; }
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+/*----------------------------------------------*/
+/*	work Skills
+/*----------------------------------------------*/
+ul.skillsList.workSkill{
+  display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 5px 0;
+}
+ul.skillsList.workSkill li{
+  border: 3px solid #11ABB0;
+    display: block;
+    padding: 5px 7px;
+    margin: 4px 6px;
+    width: auto;
+    border-radius: 30px;
+    color: #313131;
+    box-shadow: 3px 3px 6px -1px #888888;
+    font: 12px/16px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /*----------------------------------------------*/
@@ -418,13 +443,17 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
-
-#portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+#skills {
+   padding-top: 70px;
+   padding-bottom: 20px;
 }
-#portfolio h1 {
+#portfolio,#anion,#featured {
+   background: #ebeeee;
+   padding-top: 60px;
+   padding-bottom: 0px;
+}
+#portfolio h1,
+#anion h1,#featured h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -436,7 +465,7 @@ ul#nav li.current a { color: #F06000; }
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
-   background: #fff;
+   background: #ebeeee;
    overflow: hidden;
    position: relative;
 
