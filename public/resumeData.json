@@ -63,6 +63,7 @@
         "company":"CompuCon/Lowes",
         "title":"IT Technician",
         "years":"March 2021",
+        "skills":["Trouble Shooting", "Customer Service"],
         "description":"This short contracting job consisted of traveling to different Lowes locations in order to fix problems with registers, signature capture machines and other items through out all departments. This job required lots of hands-on learning with little preparation."
       },
       {
@@ -178,6 +179,13 @@
         "category":"Artistic look on how polution effects the enviorment",
         "image":"EnvirovisionI.jpg",
         "url":"https://samiea.github.io/Envirovision/"
+
+      },
+      {
+        "title":"SnakeAI",
+        "category":"Classic Snake with a Nueral Network",
+        "image":"Snake.PNG",
+        "url":"https://github.com/timmyCturner/Snake"
 
       },
       {
