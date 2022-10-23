@@ -439,7 +439,17 @@ ul.skillsList.workSkill li{
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }  */
-
+/* ------------------------------------------------------------------ */
+/* e. Portfolio Section
+/* ------------------------------------------------------------------ */
+#videos iframe{
+  width: 400px;
+  height: 300px;
+  margin: 0 20px;
+}
+.App{
+      background: #ebeeee;
+}
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
@@ -447,13 +457,13 @@ ul.skillsList.workSkill li{
    padding-top: 70px;
    padding-bottom: 20px;
 }
-#portfolio,#anion,#featured {
+#portfolio,#anion,#featured,#videos {
    background: #ebeeee;
    padding-top: 60px;
    padding-bottom: 0px;
 }
 #portfolio h1,
-#anion h1,#featured h1 {
+#anion h1,#featured h1,#videos h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -469,7 +479,7 @@ ul.skillsList.workSkill li{
    overflow: hidden;
    position: relative;
 
-   -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -492,7 +502,7 @@ ul.skillsList.workSkill li{
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
 
-   -webkit-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
@@ -512,7 +522,7 @@ ul.skillsList.workSkill li{
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
 
-   -webkit-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
@@ -736,6 +746,21 @@ call-to-action .button {
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
+/* Flex
+/* ------------------------------------------------------------------ */
+.row.flex-row.flex-2-column{
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+
+}
+.flex-row.flex-2-column>*{
+  width: 100%;
+  max-width: 50%;
+
+}
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 
@@ -969,6 +994,7 @@ footer {
    font-size: 14px;
    text-align: center;
    position: relative;
+   background: #0f0f0f;
 }
 
 footer a, footer a:visited { color: #525252; }

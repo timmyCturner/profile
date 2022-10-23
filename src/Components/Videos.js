@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Featured extends Component {
+class Videos extends Component {
   render() {
 
     if(this.props.data){
-      var featured = this.props.data.featured.map(function(featured){
+      var featured = this.props.data.videos.map(function(videos){
         var featuredImage = 'images/portfolio/'+featured.image;
         return <div key={featured.title} className="columns portfolio-item">
            <div className="item-wrap">
@@ -26,15 +26,16 @@ class Featured extends Component {
     }
 
     return (
-      <section id="featured">
+      <section id="videos">
 
       <div className="row">
 
          <div className="twelve columns collapsed">
 
-            <h1>Featured Three.JS Works</h1>
+            <h1>Unity Beginners' Playground</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-halves s-bgrid-halves cf">
+            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+                <iframe src="https://www.youtube.com/embed/I-c9k389KtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 {featured}
             </div>
           </div>
@@ -44,4 +45,4 @@ class Featured extends Component {
   }
 }
 
-export default Featured;
+export default Videos;

@@ -11,6 +11,7 @@ import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 import Skills from './Components/Skills';
 import Featured from './Components/Featured';
+import Videos from './Components/Videos';
 import AnionCreative from './Components/anioncreative';
 
 class App extends Component {
@@ -53,7 +54,10 @@ class App extends Component {
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
-        <Featured data={this.state.resumeData.featured}/>
+        <div className="row flex-row flex-2-column">
+          <Videos data={this.state.resumeData.videos}/>
+          <Featured data={this.state.resumeData.featured}/>
+        </div>
         <AnionCreative data = {this.state.resumeData.anioncreative}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
         <Skills data={this.state.resumeData.resume}/>
