@@ -1,0 +1,164 @@
+/* Honey Comb */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+.hex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  padding: 0px 10px;
+  top: -100px;
+  position: relative;
+}
+
+.honeycomb-container{
+  height: 200px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+}
+.underdognexus{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.hidden{
+   display: none; 
+}
+.honeycomb-container:hover .underdognexus{
+  display: block;
+  z-index: 250;
+  color: white;
+  text-shadow: 4px 4px 4px #333;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2.75em;
+  align-items: center;
+  font-weight: 700;
+
+}
+.honeycomb-container:hover {
+
+  box-shadow: inset 0px 0px 40px 30px #00efff80;
+  cursor: pointer;
+}
+/*original*/
+.hex.prime{
+  margin: 24px 5px !important;
+}
+.hex {
+  width: 100px;
+  height: 55px;
+  background-color: #f7dc6f;
+  position: relative;
+  margin: 18px 5px;
+}
+
+.hex.prime:before,
+.hex.prime:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  /* border-left: 50px solid transparent;
+  border-right: 50px solid transparent; */
+}
+/* //#FFF8DC (Cornsilk)
+// #FFEFD5 (Papaya Whip)
+// #FFE4C4 (Bisque)
+// #FFDAB9 (Peach Puff)
+// #FFCFA8 (Champagne) */
+
+.honeycomb-container:hover .hex.hexColor1{
+  background-color: #5F9EA080;
+  color: #5F9EA080;
+}
+.honeycomb-container:hover .hex.hexColor2{
+  background-color: #5398A780;
+  color: #5398A780;
+}
+.honeycomb-container:hover .hex.hexColor3{
+  background-color: #487B8B80;
+  color: #487B8B80;
+}
+.honeycomb-container:hover .hex.hexColor4{
+  background-color: #3C5F7D80;
+  color:#3C5F7D80;
+}
+.honeycomb-container:hover .hex.hexColor5{
+  background-color:#2E475680;
+  color: #2E475680;
+}
+
+
+
+.hex.hexColor1{
+  background-color: #ffe97e;
+  color: #ffe97e;
+}
+.hex.hexColor2{
+  background-color: #FFEFD5;
+  color: #FFEFD5;
+}
+.hex.hexColor3{
+  background-color: #FFE4C4;
+  color: #FFE4C4;
+}
+.hex.hexColor4{
+  background-color: #FFDAB9;
+  color: #FFDAB9;
+}
+.hex.hexColor5{
+  background-color: #FFCFA8;
+  color: #FFCFA8;
+}
+
+/*
+.hex.hexColor1{
+  background-color: #FFF2CC;
+  color: #FFF2CC;
+} */
+/* .hex.hexColor2{
+  background-color: #FDE49C;
+  color: #FDE49C;
+} */
+.hex.hexColor3{
+  background-color: #FFD700;
+  color: #FFD700;
+}
+.hex.hexColor4{
+  background-color: #FFC300;
+  color: #FFC300;
+}
+.hex.hexColor5{
+  background-color: #FFCFA8;
+  color: #FFCFA8;
+}
+
+/* level */
+/* .hex.s34{
+  z-index: 100;
+  width: 61.8px;
+  height: 34px;
+  background-color: #f00;
+  margin: 0;
+  top: 5px;
+  left: 5px;
+}
+
+.hex.s34:before,
+.hex.s34:after {
+  width: 0;
+  border-left: 30.9px solid transparent;
+  border-right: 30.9px solid transparent;
+}
+.hex.s34:before {
+  border-bottom: 17px solid #f00;
+}
+
+.hex.s34:after {
+  border-top: 17px solid #f00;
+} */
