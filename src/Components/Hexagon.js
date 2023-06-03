@@ -22,7 +22,8 @@ class Hexagon extends Component {
           // #FFCFA8 (Champagne)
 
 
-          var fibo_items = [{width:13,color:"hexColor5"},{width:21,color:"hexColor4"},{width:34,color:"hexColor3"},{width:55,color:"hexColor2"},{width:89,color:"hexColor1"}]
+          var fibo_items = [{width:5,color:"hexColor3"},{width:8,color:"hexColor4"},{width:13,color:"hexColor5"},{width:21,color:"hexColor4"},{width:34,color:"hexColor3"},{width:55,color:"hexColor2"},{width:89,color:"hexColor1"}]
+          const length = fibo_items.length;
           let num = fibo_items[(data)]
           let hex = "hex " + num.color
           var left = "1%"
@@ -44,70 +45,102 @@ class Hexagon extends Component {
           }
 
           else{
-            if (data%4==0){
-              var left = ""
-              var top = "1%"
-              var margin = "auto"
+            if (data==length-1){
+              var left = "0"
+              var top = "0"
+
             }
-            else if (data%4==1) {
-              var left = ""
-              var top = "45%"
-              var margin = "auto"
+            else if (data==length-2) {
+              var left = "17px"
+              var top = "5px"
+
             }
-            else if (data%4==2) {
-              var left = ""
-              var top = "20%"
-              var margin = "auto 5px 5px auto"
+            else if (data==length-3) {
+              var left = "34px"
+              var top = "14px"
+
             }
-            else if (data%4==3) {
-              var left = ""
+            else if (data==length-4) {
+              var left = "42px"
+              var top = "23px"
+
+            }
+            else if (data==length-4) {
+              var left = "44px"
+              var top = "13px"
+            }
+            else if (data==length-5) {
+              var left = "45px"
+              var top = "29px"
+            }
+            else if (data==length-6) {
+              var left = "46px"
+              var top = "31px"
+            }
+            else{
+              var left = "0px"
               var top = "0px"
-              var margin = "auto"
             }
           }
 
+          // styles = {
+          //   hex:{
+          //     zIndex: z,
+          //     width: width,
+          //     height: height,
+          //     margin: 0,
+          //     top: top,
+          //     left: left,
+          //     margin: margin
+          //
+          //   }
+          // };
           styles = {
             hex:{
               zIndex: z,
-              width: width,
-              height: height,
-              margin: 0,
               top: top,
               left: left,
-              margin: margin
+              height: height,
+
+
 
             }
           };
-          const beforeStyle = {
-            borderBottom: h+"px solid",
-            borderLeft: b+"px solid transparent",
-            borderRight: b+"px solid transparent",
-            content: "",
-            position: "absolute",
-            width: 0,
-            bottom: "100%",
-          };
-
-          const afterStyle = {
-            borderTop:  h+"px solid ",
-            borderLeft: b+"px solid transparent",
-            borderRight: b+"px solid transparent",
-            content: "",
-            position: "absolute",
-            width: 0,
-            top: "100%"
-          };
-          console.log(data);
+          // const beforeStyle = {
+          //   borderBottom: h+"px solid",
+          //   borderLeft: b+"px solid transparent",
+          //   borderRight: b+"px solid transparent",
+          //   content: "",
+          //   position: "absolute",
+          //   width: 0,
+          //   bottom: "100%",
+          // };
+          //
+          // const afterStyle = {
+          //   borderTop:  h+"px solid ",
+          //   borderLeft: b+"px solid transparent",
+          //   borderRight: b+"px solid transparent",
+          //   content: "",
+          //   position: "absolute",
+          //   width: 0,
+          //   top: "100%"
+          // };
+          // console.log(data);
 
 
           data--;
 
-          fibo.push(<div class={hex} key = {num.width} style ={styles.hex}>
-                        <div style={beforeStyle}></div>
+          // fibo.push(<div class={hex} key = {num.width} style ={styles.hex}>
+          //               <div style={beforeStyle}></div>
+          //               <Hexagon data = {data}/>
+          //               <div style={afterStyle}></div>
+          //           </div>)
+          fibo.push(<div class={hex} key = {num.width} >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style ={styles.hex} color = "red">
+                          <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" />
+                        </svg>
                         <Hexagon data = {data}/>
-                        <div style={afterStyle}></div>
                     </div>)
-
           return fibo
       }
 

@@ -65,11 +65,11 @@ class App extends Component {
     const hexHelpO = []
 
 
-    for (let i = 0; i < 15; i++) {
-        hexHelpO.push(<Hexagon data = {4}/>)
+    for (let i = 0; i < 41; i++) {
+        hexHelpO.push(<Hexagon data = {6}/>)
     }
-    for (let i = 0; i < 14; i++) {
-        hexHelpE.push(<Hexagon data = {4}/>)
+    for (let i = 0; i < 40; i++) {
+        hexHelpE.push(<Hexagon data = {6}/>)
     }
     return (
       <div className="App">
