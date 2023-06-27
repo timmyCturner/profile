@@ -4,11 +4,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "^8.13.4",
     "jquery": "^3.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^1.1.5",
+    "three": "^0.153.0"
   },
   "scripts": {
     "predeploy": "npm run build",

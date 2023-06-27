@@ -54,6 +54,8 @@ header .banner {
    width: 85%;
    padding-bottom: 30px;
    text-align: center;
+   z-index: 25;
+   position: relative;
 }
 
 header .banner-text { width: 100%; }
@@ -119,6 +121,11 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
+
+.ThreeBackground{
+    position: absolute;
+    top: 0;
+}
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -139,7 +146,10 @@ header .scrolldown a:hover { color: #11ABB0; }
    position: fixed;
    left: 0;
    top: 0;
+   background-color: #33333380;
+   z-index: 1000;
 }
+#nav-wrap.opaque { background-color: #333; }
 .opaque { background-color: #333; }
 
 /* hide toggle button */
@@ -535,6 +545,12 @@ ul.skillsList.workSkill li{
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+   max-width: 100%;
+  max-height: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  object-fit: cover;
+  width: 100%;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {

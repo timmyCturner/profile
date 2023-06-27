@@ -1,6 +1,118 @@
-import React, { Component } from 'react';
+import * as THREE from 'three';
+import React, { Suspense, Component, useState, useCallback, useRef } from 'react';
+//import { Canvas} from '@react-three/fiber';
 
+
+class Background extends Component{
+
+
+  componentDidMount(){
+
+    this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color( 0x2B2B2B );
+
+    this.camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
+    this.camera.position.z = 4.9
+
+    this.renderer = new THREE.WebGLRenderer
+    this.renderer.setSize(window.innerWidth, window.innerHeight)
+    //this.renderer.setClearColorHex( 0x2B2B2B, 1 );
+
+    this.mount.appendChild(this.renderer.domElement)
+
+    const loader = new THREE.TextureLoader();
+
+    const geometry = new THREE.PlaneGeometry(14,8,15,9);
+
+    const cgeometry = new THREE.BoxGeometry(1,1,1);
+    const cmaterial = new THREE.MeshBasicMaterial( {
+        color: 0x00ff00
+     } );
+    //this.cube = new THREE.Mesh(cgeometry,cmaterial)
+
+    this.scene.add(this.cube)
+    this.count= geometry.attributes.position.count;
+    this.clock = new THREE.Clock();
+    // const loader = new THREE.TextureLoader();
+    //
+    // // load a image resource
+    var self = this
+
+    loader.load(
+    	// resource URL
+    	'images/tealOcean.png',
+
+    	// onLoad callback
+    	function ( image ) {
+    		// use the image, e.g. draw part of it on a canvas
+    		// const canvas = document.createElement( 'canvas' );
+    		// const context = canvas.getContext( '2d' );
+        console.log(image);
+    		// context.drawImage( image, 100, 100 );
+        self.material = new THREE.MeshBasicMaterial( {
+            map: image
+         } );
+         self.mesh = new THREE.Mesh(geometry,self.material)
+
+         self.scene.add(self.mesh)
+         self.renderer.render(self.scene, self.camera)
+         self.animation();
+    	},
+
+    	// onProgress callback currently not supported
+    	undefined,
+
+    	// onError callback
+    	function () {
+    		console.error( 'An error happened.' );
+    	}
+    );
+
+  }
+  animation = () =>{
+    const time = this.clock.getElapsedTime();
+    //console.log(this);
+    if(this.mesh){
+      for (let i =0; i<this.count; i++){
+        //console.lo;g(this);
+        const x = this.mesh.geometry.attributes.position.getX(i)
+        const y = this.mesh.geometry.attributes.position.getY(i)
+
+        const anim1 = 0.25 *Math.sin(y+time*0.7);
+
+        this.mesh.geometry.attributes.position.setZ(i, anim1);
+        this.mesh.geometry.computeVertexNormals();
+        this.mesh.geometry.attributes.position.needsUpdate = true
+        //console.log();
+      }
+      //console.log(this.count);
+    }
+
+
+
+    //this.cube.rotation.x +=0.01
+
+
+    requestAnimationFrame(this.animation)
+    this.renderer.render(this.scene, this.camera)
+  }
+  render() {
+    return(
+      <div
+        class = "ThreeBackground"
+         ref = {mount => {
+          this.mount = mount;
+        }}>
+      </div>
+    )
+  }
+
+
+}
 class Header extends Component {
+
+
+
   render() {
 
     if(this.props.data){
@@ -15,8 +127,8 @@ class Header extends Component {
 
     return (
       <header id="home">
-
-      <nav id="nav-wrap">
+      <Background/>
+      <nav id="nav-wrap" >
 
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
@@ -46,6 +158,7 @@ class Header extends Component {
       <p className="scrolldown">
          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
       </p>
+
 
    </header>
     );
