@@ -48,16 +48,16 @@ class App extends Component {
     this.getResumeData();
   }
 
-  hexagonHelper(){
-   //  const hexHelp = []
-   //
-   //  const finalAssemble = []
-   //  for (let i = 0; i < 15; i++) {
-   //      hexHelp.push(<Hexagon data = {4}/>)
-   //  }
-   //
-   // return hexHelp
-  }
+  // hexagonHelper(){
+  //  //  const hexHelp = []
+  //  //
+  //  //  const finalAssemble = []
+  //  //  for (let i = 0; i < 15; i++) {
+  //  //      hexHelp.push(<Hexagon data = {4}/>)
+  //  //  }
+  //  //
+  //  // return hexHelp
+  // }
 
   render() {
 
@@ -75,8 +75,6 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
-
-
 
 
         <Resume data={this.state.resumeData.resume}/>
@@ -102,8 +100,6 @@ class App extends Component {
             Underdog Nexus
           </h2>
         </a>
-
-
 
      </section>
         <Skills data={this.state.resumeData.resume}/>
