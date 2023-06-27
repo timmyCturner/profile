@@ -1,7 +1,7 @@
 import * as THREE from 'three';
-import React, { Suspense, Component, useState, useCallback, useRef } from 'react';
+import React, { Suspense, Component } from 'react';
 //import { Canvas} from '@react-three/fiber';
-
+import bg1 from './images/tealOcean.png'
 
 class Background extends Component{
 
@@ -40,7 +40,7 @@ class Background extends Component{
 
     loader.load(
     	// resource URL
-    	'images/tealOcean.png',
+      bg1,
 
     	// onLoad callback
     	function ( image ) {

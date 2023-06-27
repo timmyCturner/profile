@@ -5,11 +5,11 @@ class Featured extends Component {
 
     if(this.props.data){
       var featured = this.props.data.featured.map(function(featured){
-        var featuredImage = 'images/portfolio/'+featured.image;
+        //var featuredImage = './images/portfolio/'+featured.image;
         return <div key={featured.title} className="columns portfolio-item">
            <div className="item-wrap">
             <a href={featured.url} title={featured.title}>
-               <img alt={featured.title} src={featuredImage} />
+               <img alt={featured.title} src={require('./images/portfolio/'+featured.image)} />
                <div className="overlay">
                   <div className="portfolio-item-meta">
                  <h5>{featured.title}</h5>
