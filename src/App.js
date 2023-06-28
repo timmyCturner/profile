@@ -49,16 +49,6 @@ class App extends Component {
     console.log('app');
   }
 
-  // hexagonHelper(){
-  //  //  const hexHelp = []
-  //  //
-  //  //  const finalAssemble = []
-  //  //  for (let i = 0; i < 15; i++) {
-  //  //      hexHelp.push(<Hexagon data = {4}/>)
-  //  //  }
-  //  //
-  //  // return hexHelp
-  // }
 
   render() {
 
