@@ -46,6 +46,7 @@ class App extends Component {
 
   componentDidMount(){
     this.getResumeData();
+    console.log('app');
   }
 
   // hexagonHelper(){
@@ -76,7 +77,7 @@ class App extends Component {
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
 
-        
+
 
         <Resume data={this.state.resumeData.resume}/>
         <div className="row flex-row flex-2-column">

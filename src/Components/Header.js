@@ -8,7 +8,7 @@ class Background extends Component{
 
   componentDidMount(){
 
-
+    console.log('back');
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color( 0x2B2B2B );
 
