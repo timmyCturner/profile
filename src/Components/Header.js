@@ -13,7 +13,7 @@ class Background extends Component{
     this.scene.background = new THREE.Color( 0x2B2B2B );
 
     this.camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
-    this.camera.position.z = 4.9
+    this.camera.position.z = 4.7
 
     this.renderer = new THREE.WebGLRenderer
     this.renderer.setSize(window.innerWidth, window.innerHeight)
