@@ -8,6 +8,7 @@ class Background extends Component{
 
   componentDidMount(){
 
+
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color( 0x2B2B2B );
 
@@ -24,13 +25,13 @@ class Background extends Component{
 
     const geometry = new THREE.PlaneGeometry(14,8,15,9);
 
-    const cgeometry = new THREE.BoxGeometry(1,1,1);
-    const cmaterial = new THREE.MeshBasicMaterial( {
-        color: 0x00ff00
-     } );
+    // const cgeometry = new THREE.BoxGeometry(1,1,1);
+    // const cmaterial = new THREE.MeshBasicMaterial( {
+    //     color: 0x00ff00
+    //  } );
     //this.cube = new THREE.Mesh(cgeometry,cmaterial)
 
-    this.scene.add(this.cube)
+    //this.scene.add(this.cube)
     this.count= geometry.attributes.position.count;
     this.clock = new THREE.Clock();
     // const loader = new THREE.TextureLoader();
@@ -47,7 +48,7 @@ class Background extends Component{
     		// use the image, e.g. draw part of it on a canvas
     		// const canvas = document.createElement( 'canvas' );
     		// const context = canvas.getContext( '2d' );
-        console.log(image);
+        //console.log(image);
     		// context.drawImage( image, 100, 100 );
         self.material = new THREE.MeshBasicMaterial( {
             map: image
