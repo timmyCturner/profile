@@ -78,17 +78,17 @@ class App extends Component {
         <Portfolio data={this.state.resumeData.portfolio}/>
         <section id="honycomb">
 
-        <a class = "honeycomb-container" href = "https://www.underdognexus.com/">
-          <div class="hex-container">
+        <a className = "honeycomb-container" href = "https://www.underdognexus.com/">
+          <div className="hex-container">
             {hexHelpO}
           </div>
-          <div class="hex-container">
+          <div className="hex-container">
             {hexHelpE}
           </div>
-          <div class="hex-container">
+          <div className="hex-container">
             {hexHelpO}
           </div>
-          <h2 class = "hidden underdognexus">
+          <h2 className = "hidden underdognexus">
             Underdog Nexus
           </h2>
         </a>

@@ -24,7 +24,7 @@ class Featured extends Component {
         </div>
       })
     }
-
+    console.log('featured');
     return (
       <section id="featured">
 

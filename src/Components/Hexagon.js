@@ -135,11 +135,11 @@ class Hexagon extends Component {
           //               <Hexagon data = {data}/>
           //               <div style={afterStyle}></div>
           //           </div>)
-          fibo.push(<div class={hex} key = {num.width} >
+          fibo.push(<div className={hex} key = {data} >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style ={styles.hex} color = "red">
                           <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" />
                         </svg>
-                        <Hexagon data = {data}/>
+                        <Hexagon key = {data} data = {data}/>
                     </div>)
           return fibo
       }

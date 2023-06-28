@@ -15,7 +15,7 @@ class Resume extends Component {
 
         if (work.skills){
           listItems = work.skills.map((item) =>
-            <li>{item}</li>
+            <li key = {item}>{item}</li>
           );
         }
 
@@ -62,7 +62,7 @@ class Resume extends Component {
 
 
 
-      
+
    </section>
     );
   }
