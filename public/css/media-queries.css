@@ -90,11 +90,7 @@
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
    /* video Section
    --------------------------------------------------------------------- */
-   body #videos iframe {
-       width: 300px;
-       height: 250px;
 
-   }
 
 }
 
@@ -394,5 +390,13 @@
    /* social links */
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }
+
+
+
+
+     body #videos iframe {
+
+      width: 85%;
+  }
 
 }

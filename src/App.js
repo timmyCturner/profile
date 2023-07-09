@@ -13,6 +13,7 @@ import Portfolio from './Components/Portfolio';
 import Skills from './Components/Skills';
 import Featured from './Components/Featured';
 import Videos from './Components/Videos';
+import VideosThree from './Components/VideosThree';
 import AnionCreative from './Components/anioncreative';
 
 class App extends Component {
@@ -70,12 +71,30 @@ class App extends Component {
 
 
         <Resume data={this.state.resumeData.resume}/>
-        <div className="row flex-row flex-2-column">
-          <Videos data={this.state.resumeData.videos}/>
-          <Featured data={this.state.resumeData.featured}/>
+        <div className="row flex-row flex-2-column flip-grid">
+          <div>
+            <VideosThree data={this.state.resumeData.videos}/>
+            <span className = "hide-flip">
+              <Videos data={this.state.resumeData.videos}/>
+            </span>
+          </div>
+          <div className = "fl-2-column-child">
+            <AnionCreative data = {this.state.resumeData.anioncreative}/>
+            <span className = "hide-flip">
+              <Featured data={this.state.resumeData.featured}/>
+            </span>
+          </div>
         </div>
-        <AnionCreative data = {this.state.resumeData.anioncreative}/>
+
+        <div className="flip-grid-hidden">
+            <Featured data={this.state.resumeData.featured}/>
+        </div>
+
         <Portfolio data={this.state.resumeData.portfolio}/>
+
+        <div className="flip-grid-hidden">
+            <Videos data={this.state.resumeData.videos}/>
+        </div>
         <section id="honycomb">
 
         <a className = "honeycomb-container" href = "https://www.underdognexus.com/">
