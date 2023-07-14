@@ -457,6 +457,13 @@ ul.skillsList.workSkill li{
   height: 300px;
   margin: 0 20px;
 }
+#videos .videos-wrap{
+  width: fit-content;
+  margin: auto;
+}
+#videos .videos-wrap.first{
+  margin-bottom: 60px;
+}
 .App{
       background: #ebeeee;
 }
@@ -471,6 +478,14 @@ ul.skillsList.workSkill li{
    background: #ebeeee;
    padding-top: 60px;
    padding-bottom: 0px;
+}
+.flip-grid-hidden #videos{
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+}
+.fl-2-column-child #featured{
+  padding-top: 30px;
 }
 #portfolio h1,
 #anion h1,#featured h1,#videos h1 {
@@ -620,6 +635,51 @@ ul.skillsList.workSkill li{
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
+.fl-2-column-child .bgrid-quarters [class*="column"] {
+    width: 50%;
+}
+@media only screen and (max-width: 900px){
+  .fl-2-column-child .bgrid-quarters [class*="column"] {
+      width: 33.33333%;
+  }
+  #portfolio,#anion,#featured,#videos {
+     padding-top: 45px;
+  }
+}
+/*-----------------Flip Grid------------------*/
+.flex-row.flex-2-column.flip-grid{
+      flex-wrap: wrap;
+}
+.flex-row.flex-2-column.flip-grid section .row{
+  width: 100%;
+  margin: auto;
+}
+.flip-grid-hidden{
+  display: none;
+}
+
+@media only screen and (max-width: 900px){
+  body .flip-grid-hidden{
+    display: block;
+  }
+  body .hide-flip{
+    display: none;
+  }
+  .flex-row.flex-2-column.flip-grid>* {
+    width: 100%;
+    max-width: 100%;
+}
+}
+@media only screen and (max-width: 767px){
+.flex-row.flex-2-column.flip-grid section .row {
+    width: 460px;
+  }
+}
+@media only screen and (max-width: 460px){
+.flex-row.flex-2-column.flip-grid section .row {
+    width: auto;
+  }
+}
 /* fadein/fadeout effect for modal popup
 /* ------------------------------------------------------------------ */
 
