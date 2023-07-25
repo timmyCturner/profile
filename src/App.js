@@ -67,34 +67,12 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
-
-
-
         <Resume data={this.state.resumeData.resume}/>
-        <div className="row flex-row flex-2-column flip-grid">
-          <div>
-            <VideosThree data={this.state.resumeData.videos}/>
-            <span className = "hide-flip">
-              <Videos data={this.state.resumeData.videos}/>
-            </span>
-          </div>
-          <div className = "fl-2-column-child">
-            <AnionCreative data = {this.state.resumeData.anioncreative}/>
-            <span className = "hide-flip">
-              <Featured data={this.state.resumeData.featured}/>
-            </span>
-          </div>
-        </div>
-
-        <div className="flip-grid-hidden">
-            <Featured data={this.state.resumeData.featured}/>
-        </div>
-
+        <Videos data={this.state.resumeData.videos}/>
+        <AnionCreative data = {this.state.resumeData.anioncreative}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
 
-        <div className="flip-grid-hidden">
-            <Videos data={this.state.resumeData.videos}/>
-        </div>
+
         <section id="honycomb">
 
         <a className = "honeycomb-container" href = "https://www.underdognexus.com/">
@@ -122,3 +100,23 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+
+
+// <div className="row flex-row flex-2-column flip-grid">
+//   <div>
+//     <VideosThree data={this.state.resumeData.videos}/>
+//     <span className = "hide-flip">
+//       <Videos data={this.state.resumeData.videos}/>
+//     </span>
+//   </div>
+//   <div className = "fl-2-column-child">
+//     <AnionCreative data = {this.state.resumeData.anioncreative}/>
+//     <span className = "hide-flip">
+//       <Featured data={this.state.resumeData.featured}/>
+//     </span>
+//   </div>
+// </div>

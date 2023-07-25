@@ -8,26 +8,32 @@ class Background extends Component{
 
   componentDidMount(){
 
-    console.log('back');
+    //console.log('back');
     this.scene = new THREE.Scene();
 //this.scene.background = new THREE.Color( 0x2B2B2B );
-
-    this.camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
+    let delimieter = document.querySelector("#home").offsetHeight
+    this.camera = new THREE.PerspectiveCamera(75,window.innerWidth/delimieter,0.1,1000)
     this.camera.position.z = 3
 
     this.renderer = new THREE.WebGLRenderer
-    this.renderer.setSize(window.innerWidth, window.innerHeight)
+    this.renderer.setSize(window.innerWidth, delimieter)
     //this.renderer.setClearColorHex( 0x2B2B2B, 1 );
     this.renderer.setClearColor( 0x000000, 0 ); // the default
     this.mount.appendChild(this.renderer.domElement)
 
 
     window.addEventListener( 'resize', ()=>{
+      let delimieter = document.querySelector("#home").offsetHeight
+      // console.log(delimieter);
+      // let delimieter = window.innerHeight
+      // if (window.innerHeight<window.innerWidth/2){
+      //   delimieter  = window.innerWidth/2
+      // }
 
-      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.aspect = window.innerWidth / delimieter;
       this.camera.updateProjectionMatrix();
 
-      this.renderer.setSize( window.innerWidth, window.innerHeight );
+      this.renderer.setSize( window.innerWidth, delimieter );
 
     } );
 
