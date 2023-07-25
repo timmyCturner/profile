@@ -460,10 +460,17 @@ ul.skillsList.workSkill li{
 #videos .videos-wrap{
   width: fit-content;
   margin: auto;
+  margin-bottom: 35px;
 }
 #videos .videos-wrap.first{
   margin-bottom: 60px;
 }
+#videos .row.flex-row.flex-2-column{
+  flex-wrap: wrap;
+}
+/* #videos .videos-wrap.last{
+      margin-bottom: 0px;
+} */
 .App{
       background: #ebeeee;
 }

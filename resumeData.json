@@ -156,6 +156,11 @@
   },
   "featured":{
     "featured": [
+      {}
+    ]
+  },
+  "portfolio":{
+    "projects": [
       {
         "title":"Swarm",
         "category":"lighting and patterns with three.js",
@@ -169,11 +174,7 @@
         "image":"astro.PNG",
         "url":"https://timmycturner.github.io/astro"
 
-      }
-    ]
-  },
-  "portfolio":{
-    "projects": [
+      },
       {
         "title":"Envirovision",
         "category":"Artistic look on how polution effects the enviorment",

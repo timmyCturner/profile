@@ -90,7 +90,10 @@
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
    /* video Section
    --------------------------------------------------------------------- */
-
+   body #videos iframe {
+    width: 350px;
+    height: 300px;
+}
 
 }
 
