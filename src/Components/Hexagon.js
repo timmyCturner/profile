@@ -5,7 +5,7 @@ class Hexagon extends Component {
 
 
 
-    assemble(data){
+    assemble(data,prev,curr){
       let divs = [];
       let fibo = []
       var styles = {};
@@ -14,133 +14,111 @@ class Hexagon extends Component {
       var b = 50;
       var h = 27.5
 
-      if(data>=0){
+      if(data>=0&&curr>=8){
           //#FFF8DC (Cornsilk)
           // #FFEFD5 (Papaya Whip)
           // #FFE4C4 (Bisque)
           // #FFDAB9 (Peach Puff)
           // #FFCFA8 (Champagne)
 
+          // var temp = curr
+          // curr += prev
+          // prev = temp
+          // curr
 
-          var fibo_items = [{width:5,color:"hexColor3"},{width:8,color:"hexColor4"},{width:13,color:"hexColor5"},{width:21,color:"hexColor4"},{width:34,color:"hexColor3"},{width:55,color:"hexColor2"},{width:89,color:"hexColor1"}]
+
+          var fibo_items = ["hexColor5","hexColor4","hexColor3","hexColor2","hexColor1"]
+
+
           const length = fibo_items.length;
-          let num = fibo_items[(data)]
-          let hex = "hex " + num.color
+          let color = fibo_items[((data)%5)]
+          // let color2 = fibo_items[((data+5)%5)]
+          let hex = "hex " + color
           var left = "1%"
           var top = "1%"
           var margin = "none"
           //console.log(num);
-          let w = ((num.width- Number.EPSILON) *18.2)/10//Math.floor((num.width+ Number.EPSILON) *18.2)/10
+          let w = ((curr- Number.EPSILON) *18.2)/10//Math.floor((num.width+ Number.EPSILON) *18.2)/10
           //console.log(w);
           width = w+"px"
           //console.log(width);
-          height = num.width+"px"
+          height = curr+"px"
 
           b= ((w+Number.EPSILON) /20)*10//Math.floor((w+Number.EPSILON) /20)*10
-          h = (num.width/20)*10
-          let z = 144-num.width
+          h = (curr/20)*10
+          let z = 144-curr
 
-          if (data == fibo_items.length-1){
-            hex = "hex prime " + num.color
+          if (data == 6){
+            hex = "hex prime " + color
           }
 
-          else{
-            if (data==length-1){
-              var left = "0"
-              var top = "0"
 
-            }
-            else if (data==length-2) {
-              var left = "17px"
-              var top = "5px"
-
-            }
-            else if (data==length-3) {
-              var left = "34px"
-              var top = "14px"
-
-            }
-            else if (data==length-4) {
-              var left = "42px"
-              var top = "23px"
-
-            }
-            else if (data==length-4) {
-              var left = "44px"
-              var top = "13px"
-            }
-            else if (data==length-5) {
-              var left = "45px"
-              var top = "29px"
-            }
-            else if (data==length-6) {
-              var left = "46px"
-              var top = "31px"
-            }
-            else{
-              var left = "0px"
-              var top = "0px"
-            }
-          }
 
           // styles = {
           //   hex:{
-          //     zIndex: z,
-          //     width: width,
-          //     height: height,
-          //     margin: 0,
           //     top: top,
           //     left: left,
-          //     margin: margin
-          //
+          //     height: (curr),
+          //     zIndex: z,
           //   }
           // };
-          styles = {
-            hex:{
-              zIndex: z,
-              top: top,
-              left: left,
-              height: height,
 
+          const string =  curr+"px"
+          //let fill1 = fibo_items[((data)%5)]
+          const mystyle = {
 
+            zIndex: z,
+            width: string,
+            height: string,
 
-            }
           };
-          // const beforeStyle = {
-          //   borderBottom: h+"px solid",
-          //   borderLeft: b+"px solid transparent",
-          //   borderRight: b+"px solid transparent",
-          //   content: "",
-          //   position: "absolute",
-          //   width: 0,
-          //   bottom: "100%",
-          // };
-          //
-          // const afterStyle = {
-          //   borderTop:  h+"px solid ",
-          //   borderLeft: b+"px solid transparent",
-          //   borderRight: b+"px solid transparent",
-          //   content: "",
-          //   position: "absolute",
-          //   width: 0,
-          //   top: "100%"
-          // };
-          // console.log(data);
+
+          if (data == 6){
+
+            let temp  = prev;prev = curr - prev;curr = temp;data--;
+            // console.log('Filter');
+            // console.log(data);
+            fibo.push(<><div className={hex} key = {data} >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style={mystyle} color="red">
+                <polygon className={fibo_items[((data+1) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" />
+                <polygon className={fibo_items[((data+2) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(9, 7) scale(0.9)"  />
+                <polygon className={fibo_items[((data+3) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(18, 14) scale(0.8)"  />
+                <polygon className={fibo_items[((data+4) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(27, 21) scale(0.7)"  />
 
 
-          data--;
 
+
+                </svg>
+
+                          <Hexagon  key = {data}  data = {data} prev = {prev} curr = {curr} />
+                      </div>
+                      </>)
+
+          }
+          else{
+            let temp  = prev;prev = curr - prev;curr = temp;data--;
+            let svg1,svg2;
+
+            //<polygon className={fibo_items[((data+2) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(12, 8) scale(0.9)"  />
+            //<polygon className={fibo_items[((data+3) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(25, 16) scale(0.8)"  />
+            fibo.push(<><div className={hex} key = {data} style={mystyle}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style ={mystyle} color = "red">
+                            <polygon className={fibo_items[((data+1) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" />
+
+                          </svg>
+
+                          <Hexagon data = {data} prev = {prev} curr = {(curr)} />
+                      </div>
+
+                      </>)
+
+          }
           // fibo.push(<div class={hex} key = {num.width} style ={styles.hex}>
           //               <div style={beforeStyle}></div>
           //               <Hexagon data = {data}/>
           //               <div style={afterStyle}></div>
           //           </div>)
-          fibo.push(<div className={hex} key = {data} >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style ={styles.hex} color = "red">
-                          <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" />
-                        </svg>
-                        <Hexagon key = {data} data = {data}/>
-                    </div>)
+
           return fibo
       }
 
@@ -153,9 +131,12 @@ class Hexagon extends Component {
 
   render() {
 
+    //console.log(this);
+
     if(this.props.data){
       //console.log(this.props.data);
-      var assemble = this.assemble(this.props.data)
+      var assemble = this.assemble(this.props.data,this.props.prev,this.props.curr,this.props.addon)
+
     }
     // const finalAssemble = []
     // for (let i = 0; i < 15; i++) {
@@ -166,7 +147,7 @@ class Hexagon extends Component {
     return (
 
 
-          <span>{assemble}</span>
+          <>{assemble}</>
 
     );
   }

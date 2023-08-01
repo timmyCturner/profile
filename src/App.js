@@ -58,10 +58,10 @@ class App extends Component {
 
 
     for (let i = 0; i < 41; i++) {
-        hexHelpO.push(<Hexagon data = {6}/>)
+        hexHelpO.push(<Hexagon data = {6} prev = {55} curr = {89}/>)
     }
     for (let i = 0; i < 40; i++) {
-        hexHelpE.push(<Hexagon data = {6}/>)
+        hexHelpE.push(<Hexagon data = {6} prev = {55} curr = {89}/>)
     }
     return (
       <div className="App">
@@ -79,7 +79,7 @@ class App extends Component {
           <div className="hex-container">
             {hexHelpO}
           </div>
-          <div className="hex-container">
+          <div className="hex-container mid">
             {hexHelpE}
           </div>
           <div className="hex-container">
