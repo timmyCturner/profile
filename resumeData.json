@@ -162,6 +162,13 @@
   "portfolio":{
     "projects": [
       {
+        "title":"Logo Generator",
+        "category":"AI Image Generator",
+        "image":"StableDiffAI.PNG",
+        "url":"https://www.underdognexus.com/ai-icons/"
+
+      },
+      {
         "title":"Swarm",
         "category":"lighting and patterns with three.js",
         "image":"swarm.PNG",
@@ -176,10 +183,10 @@
 
       },
       {
-        "title":"Envirovision",
-        "category":"Artistic look on how polution effects the enviorment",
-        "image":"EnvirovisionI.jpg",
-        "url":"https://samiea.github.io/Envirovision/"
+        "title":"Vigenere Cypher",
+        "category":"Backend development project to decypher any Vigenere cypher",
+        "image":"Vigenere.jpg",
+        "url":"https://timmycturner.github.io/cryptograph"
 
       },
       {
@@ -190,19 +197,20 @@
 
       },
       {
+        "title":"Envirovision",
+        "category":"Artistic look on how polution effects the enviorment",
+        "image":"EnvirovisionI.jpg",
+        "url":"https://samiea.github.io/Envirovision/"
+
+      },
+      {
         "title":"Royal Road Initiative",
         "category":"Using machine learning to determine sucsess of a book",
         "image":"KNN.png",
         "url":"https://github.com/TheTimTurner/RoyalRoad/blob/master/RoyalRoad.pdf"
 
-      },
-      {
-        "title":"Vigenere Cypher",
-        "category":"Backend development project to decypher any Vigenere cypher",
-        "image":"Vigenere.jpg",
-        "url":"https://timmycturner.github.io/cryptograph"
-
       }
+
     ]
   },
   "testimonials":{
