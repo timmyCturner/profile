@@ -15,16 +15,7 @@ class Hexagon extends Component {
       var h = 27.5
 
       if(data>=0&&curr>=8){
-          //#FFF8DC (Cornsilk)
-          // #FFEFD5 (Papaya Whip)
-          // #FFE4C4 (Bisque)
-          // #FFDAB9 (Peach Puff)
-          // #FFCFA8 (Champagne)
 
-          // var temp = curr
-          // curr += prev
-          // prev = temp
-          // curr
 
 
           var fibo_items = ["hexColor5","hexColor4","hexColor3","hexColor2","hexColor1"]
@@ -53,15 +44,6 @@ class Hexagon extends Component {
           }
 
 
-
-          // styles = {
-          //   hex:{
-          //     top: top,
-          //     left: left,
-          //     height: (curr),
-          //     zIndex: z,
-          //   }
-          // };
 
           const string =  curr+"px"
           //let fill1 = fibo_items[((data)%5)]
@@ -99,8 +81,7 @@ class Hexagon extends Component {
             let temp  = prev;prev = curr - prev;curr = temp;data--;
             let svg1,svg2;
 
-            //<polygon className={fibo_items[((data+2) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(12, 8) scale(0.9)"  />
-            //<polygon className={fibo_items[((data+3) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" transform="translate(25, 16) scale(0.8)"  />
+
             fibo.push(<><div className={hex} key = {data} style={mystyle}>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style ={mystyle} color = "red">
                             <polygon className={fibo_items[((data+1) % 6)]} points="100,10 190,50 190,150 100,190 10,150 10,50" />
@@ -113,11 +94,6 @@ class Hexagon extends Component {
                       </>)
 
           }
-          // fibo.push(<div class={hex} key = {num.width} style ={styles.hex}>
-          //               <div style={beforeStyle}></div>
-          //               <Hexagon data = {data}/>
-          //               <div style={afterStyle}></div>
-          //           </div>)
 
           return fibo
       }

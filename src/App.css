@@ -62,7 +62,7 @@
 .hex {
   width: 89px;
   height: 89px;
-  /* background-color: #f7dc6f; */
+
   position: relative;
   margin: auto;
   top: 15%;
@@ -83,21 +83,7 @@
   margin-left: 12px;
   margin-top: 6px;
 }
-/* .hex.prime:before,
-.hex.prime:after {
-  content: "";
-  position: absolute;
-  width: 0;
 
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-
-} */
-/* //#FFF8DC (Cornsilk)
-// #FFEFD5 (Papaya Whip)
-// #FFE4C4 (Bisque)
-// #FFDAB9 (Peach Puff)
-// #FFCFA8 (Champagne) */
 
 .honeycomb-container:hover .hex.hexColor1,
 .honeycomb-container:hover polygon.hexColor1{
@@ -143,31 +129,7 @@ polygon.hexColor2,
   color: #FFEFD5; */
   fill: #FFEFD5;
 }
-.hex.hexColor3{
-  /* background-color: #FFE4C4;
-  color: #FFE4C4; */
-  fill: #FFE4C4;
-}
-.hex.hexColor4{
-  /* background-color: #FFDAB9;
-  color: #FFDAB9; */
-  fill: #FFDAB9;
-}
-.hex.hexColor5{
-  /* background-color: #FFCFA8;
-  color: #FFCFA8; */
-  fill: #FFCFA8;
-}
 
-/*
-.hex.hexColor1{
-  background-color: #FFF2CC;
-  color: #FFF2CC;
-} */
-/* .hex.hexColor2{
-  background-color: #FDE49C;
-  color: #FDE49C;
-} */
 polygon.hexColor3,
 .hex.hexColor3{
   /* background-color: #FFD700;
@@ -187,30 +149,6 @@ polygon.hexColor5,
   fill: #FFCFA8;
 }
 
-/* level */
-/* .hex.s34{
-  z-index: 100;
-  width: 61.8px;
-  height: 34px;
-  background-color: #f00;
-  margin: 0;
-  top: 5px;
-  left: 5px;
-}
-
-.hex.s34:before,
-.hex.s34:after {
-  width: 0;
-  border-left: 30.9px solid transparent;
-  border-right: 30.9px solid transparent;
-}
-.hex.s34:before {
-  border-bottom: 17px solid #f00;
-}
-
-.hex.s34:after {
-  border-top: 17px solid #f00;
-} */
 .hex>span{
   position: absolute;
 }
