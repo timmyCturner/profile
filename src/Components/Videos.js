@@ -33,6 +33,7 @@ class Videos extends Component {
 
 
         </div>
+        <a href = "https://www.underdognexus.com/videos-pg/" class = "btn link button">More Videos &amp; Source Code</a>
 
    </section>
     );
