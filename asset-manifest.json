@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.726c22f1.css",
-    "main.js": "/profile/static/js/main.80566141.js",
+    "main.js": "/profile/static/js/main.3207618a.js",
     "static/media/tealOcean.png": "/profile/static/media/tealOcean.6dc388498a64fdd6f0c0.png",
     "static/media/astro.PNG": "/profile/static/media/astro.e716109b29d4a3cd6f72.PNG",
     "static/media/VicNiceley.PNG": "/profile/static/media/VicNiceley.fe316062a87a6cfa3c88.PNG",
@@ -16,12 +16,13 @@
     "static/media/PP.PNG": "/profile/static/media/PP.8082831d6615655bbb5b.PNG",
     "static/media/WWEC.PNG": "/profile/static/media/WWEC.4e32d05f21c9ca8b6fa6.PNG",
     "static/media/Vigenere.jpg": "/profile/static/media/Vigenere.9905454825b8a5635f7b.jpg",
+    "static/media/logo.svg": "/profile/static/media/logo.28940f2eb9e7e0ce64c1805c78244bc5.svg",
     "static/media/Snake.PNG": "/profile/static/media/Snake.fc4925689236040ef3e6.PNG",
     "main.726c22f1.css.map": "/profile/static/css/main.726c22f1.css.map",
-    "main.80566141.js.map": "/profile/static/js/main.80566141.js.map"
+    "main.3207618a.js.map": "/profile/static/js/main.3207618a.js.map"
   },
   "entrypoints": [
     "static/css/main.726c22f1.css",
-    "static/js/main.80566141.js"
+    "static/js/main.3207618a.js"
   ]
 }

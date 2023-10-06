@@ -230,6 +230,7 @@ ul#nav li.current a { color: #F06000; }
 #about .download .button {
    margin-top: 6px;
    background: #444;
+       width: 225px;
 }
 #about .download .button:hover {
    background: #fff;
@@ -239,7 +240,118 @@ ul#nav li.current a { color: #F06000; }
    margin-right: 15px;
    font-size: 20px;
 }
+/* ------------------------------------------------------------------ */
+/* d. React Special
+/* ------------------------------------------------------------------ */
+.portfolio-item .item-wrap.flex-item-wrap{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.atom-movement svg{
+  width: inherit;
+  height: auto;
+  margin: 0 5px 0 -5px;
+  position: absolute;
+  left: 0;
 
+  transform: rotateZ(30deg);
+}
+.atom-movement.small{
+  width: 80px;
+  top: -28px;
+  left: -10px;
+}
+.atom-movement.large{
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+.atom-movement svg g {
+  fill: #4289a1F0;
+}
+.atom-movement.large .special-oval-parent{
+
+  width: 300px;
+  height: 200px;
+
+
+}
+.atom-movement.small .special-oval-parent{
+  position: absolute;
+  width: 70px;
+  height: 55px;
+}
+.atom-movement.large .special-oval-parent{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+}
+.special-oval-parent.oval-1{
+  transform: rotateZ(60deg);
+}
+.special-oval-parent.oval-3{
+  transform: rotateZ(-60deg);
+}
+.atom-movement.small .special-oval-container {
+  /* Some layout code… */
+  animation: updown 1s infinite ease-in-out alternate;
+}
+.atom-movement.large .special-oval-container {
+  /* Some layout code… */
+  animation: updownL 1s infinite ease-in-out alternate;
+}
+.atom-movement{
+  position: relative;
+  width: inherit;
+
+}
+.special-oval-container::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+
+  background-image: -webkit-linear-gradient(30deg, #1c7491 25%, #4289a1 75%);
+  transform-origin: center 200%;
+	animation: circle 2s infinite linear;
+  margin: auto;
+
+  border: 0px;
+  cursor: pointer;
+  /* border-radius: 6px; */
+  box-shadow: 2px 2px 20px #7fffff, 0 0 0 0px #ffffffeb;
+
+}
+.atom-movement.large .special-oval-container::after{
+  width: 15px;
+  height: 15px;
+  transform-origin: center 300%;
+}
+
+@keyframes circle {
+	to { transform: rotate(1turn); }
+}
+@keyframes updown {
+	to { transform: translateY(20px); }
+}
+@keyframes updownL {
+	to { transform: translateY(95px); }
+}
+/* @keyframes circular-animation {
+  0% {
+      transform: translate(-50%, -50%) translateX(50px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateX(50px) rotate(360deg);
+    }
+}
+
+  .special-oval {
+    animation: circular-animation 4s linear infinite;
+
+  } */
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -654,6 +766,13 @@ ul.skillsList.workSkill li{
   }
 }
 /*-----------------Flip Grid------------------*/
+.flex{
+  display: flex;
+}
+.justify-center{
+  justify-content:start;
+  align-items: center;
+}
 .flex-row.flex-2-column.flip-grid{
       flex-wrap: wrap;
 }
