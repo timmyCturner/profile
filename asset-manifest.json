@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.726c22f1.css",
-    "main.js": "/profile/static/js/main.9aa98ca9.js",
+    "main.js": "/profile/static/js/main.a9577467.js",
     "static/media/tealOcean.png": "/profile/static/media/tealOcean.6dc388498a64fdd6f0c0.png",
     "static/media/astro.PNG": "/profile/static/media/astro.e716109b29d4a3cd6f72.PNG",
     "static/media/VicNiceley.PNG": "/profile/static/media/VicNiceley.fe316062a87a6cfa3c88.PNG",
     "static/media/EnvirovisionI.jpg": "/profile/static/media/EnvirovisionI.c641a13ca1281c4b2f5f.jpg",
     "static/media/KindredSpiritMailbox.PNG": "/profile/static/media/KindredSpiritMailbox.a7c22056c3037e5c258f.PNG",
     "static/media/MooresHA.PNG": "/profile/static/media/MooresHA.b93afa9dc719b96959df.PNG",
-    "static/media/LinkedIn.jpg": "/profile/static/media/LinkedIn.296b495b85cdf234e423.jpg",
+    "static/media/Linked_In_24.jpg": "/profile/static/media/Linked_In_24.ded37d2f4d05e01ba27f.jpg",
     "static/media/StableDiffAI.PNG": "/profile/static/media/StableDiffAI.3e634e5e0db76a30fc2a.PNG",
     "static/media/swarm.PNG": "/profile/static/media/swarm.d028f02d90cce3e9d481.PNG",
     "index.html": "/profile/index.html",
@@ -19,10 +19,10 @@
     "static/media/logo.svg": "/profile/static/media/logo.28940f2eb9e7e0ce64c1805c78244bc5.svg",
     "static/media/Snake.PNG": "/profile/static/media/Snake.fc4925689236040ef3e6.PNG",
     "main.726c22f1.css.map": "/profile/static/css/main.726c22f1.css.map",
-    "main.9aa98ca9.js.map": "/profile/static/js/main.9aa98ca9.js.map"
+    "main.a9577467.js.map": "/profile/static/js/main.a9577467.js.map"
   },
   "entrypoints": [
     "static/css/main.726c22f1.css",
-    "static/js/main.9aa98ca9.js"
+    "static/js/main.a9577467.js"
   ]
 }
