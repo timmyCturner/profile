@@ -35,7 +35,7 @@ class About extends Component {
       <section id="about">
       <div className="row">
          <div className="three columns">
-            <img className="profile-pic"  src={require('./images/LinkedIn.jpg')} alt="Tim Kueny Profile Pic" />
+            <img className="profile-pic"  src={require('./images/Linked_In_24.jpg')} alt="Tim Kueny Profile Pic" />
          </div>
 
          <div className="nine columns main-col">
