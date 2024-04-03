@@ -11,6 +11,9 @@ class Resume extends Component {
         <p>{education.description}</p></div>
       })
       let listItems;
+      let workItems;
+
+
       var work = this.props.data.work.map(function(work){
 
         if (work.skills){
@@ -19,12 +22,21 @@ class Resume extends Component {
           );
         }
 
+        if (work.description){
+          workItems = work.description.map((item) =>
+            <li key = {item}>{item}</li>
+          );
+        }
+
         return <div key={work.company}><h3>{work.company}</h3>
             <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
             <ul className = "skillsList workSkill">{listItems}</ul>
-            <p>{work.description}</p>
+            <ul className = "Work description">{workItems}</ul>
         </div>
       })
+
+
+
       var skills = this.props.data.skills.map(function(skills){
         var className = 'bar-expand '+skills.name.toLowerCase();
         return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>

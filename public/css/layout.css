@@ -429,7 +429,11 @@ ul.skillsList.workSkill li{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
+.Work.description li {
+  list-style-type: circle;
+  margin-left: 15px;
+      margin-bottom: 6px;
+}
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/

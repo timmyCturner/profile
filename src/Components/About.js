@@ -56,7 +56,7 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href="https://github.com/timmyCturner/profile/blob/gh-pages/Resume_Kueny.pdf" className="button" target="_blank"><i className="fa fa-download"></i>Download Resume</a>
+                     <a href="https://docs.google.com/document/d/1026YEriLd281KDmaNKFQnGPPH0dFe8CN/edit?usp=sharing&ouid=102521019574185827546&rtpof=true&sd=true" className="button" target="_blank"><i class="fa fa-file-text" ></i>Open Google Doc</a>
                   </p>
 
                </div>
